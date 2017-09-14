@@ -7,5 +7,5 @@ RUN cd /opt/nheqminerv0.4b/cpu_xenoncat/Linux/asm && sh assemble.sh
 RUN cd /opt/nheqminerv0.4b/Linux_cmake/nheqminer_cpu && cmake . && make -j $(nproc)
 
 workdir /opt/nheqminerv0.4b/Linux_cmake/nheqminer_cpu
-ENTRYPOINT ["./nheqminer_cpu", "-l", "zec-eu1.nanopool.org:6666", "-p", "x"]
+ENTRYPOINT ["./nheqminer_cpu", "-l", "zec-eu1.nanopool.org:6666", "-t", "6", "-p", "x", "-u"]
 CMD ["t1LcrECyQ6BToCXxsp4EkTNz74h7DakjsuN/minion/milk4candy@gmail.com"]
